@@ -11,7 +11,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <errno.h>
-
+#import "ICMPHeader.h"
 #pragma mark * IPv4 and ICMPv4 On-The-Wire Format
 
 /*! Describes the on-the-wire header format for an IPv4 packet.
@@ -254,10 +254,10 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
     
     switch (self.hostAddressFamily) {
         case AF_INET: {
-            packet = [self pingPacketWithType:ICMPv4TypeEchoRequest payload:payload requiresChecksum:YES];
+            packet = [self pingPacketWithType:kICMPv4TypeEchoRequest payload:payload requiresChecksum:YES];
         } break;
         case AF_INET6: {
-            packet = [self pingPacketWithType:ICMPv6TypeEchoRequest payload:payload requiresChecksum:NO];
+            packet = [self pingPacketWithType:kICMPv6TypeEchoRequest payload:payload requiresChecksum:NO];
         } break;
         default: {
             assert(NO);
@@ -396,7 +396,7 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
         icmpPtr->checksum  = receivedChecksum;
         
         if (receivedChecksum == calculatedChecksum) {
-            if ( (icmpPtr->type == ICMPv4TypeEchoReply) && (icmpPtr->code == 0) ) {
+            if ( (icmpPtr->type == kICMPv4TypeEchoReply) && (icmpPtr->code == 0) ) {
                 if ( OSSwapBigToHostInt16(icmpPtr->identifier) == self.identifier ) {
                     uint16_t    sequenceNumber;
                     
@@ -438,7 +438,7 @@ static uint16_t in_cksum(const void *buffer, size_t bufferLen) {
         // cook up an IPv6 pseudo header and we don't have the ingredients) and unnecessary
         // (the kernel has already done this check).
         
-        if ( (icmpPtr->type == ICMPv6TypeEchoReply) && (icmpPtr->code == 0) ) {
+        if ( (icmpPtr->type == kICMPv6TypeEchoReply) && (icmpPtr->code == 0) ) {
             if ( OSSwapBigToHostInt16(icmpPtr->identifier) == self.identifier ) {
                 uint16_t    sequenceNumber;
                 

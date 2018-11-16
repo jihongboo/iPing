@@ -242,31 +242,4 @@ typedef NS_ENUM(NSInteger, SimplePingAddressStyle) {
  *      it parse received ping packets.
  */
 
-struct ICMPHeader {
-    uint8_t     type;
-    uint8_t     code;
-    uint16_t    checksum;
-    uint16_t    identifier;
-    uint16_t    sequenceNumber;
-    // data...
-};
-typedef struct ICMPHeader ICMPHeader;
-
-__Check_Compile_Time(sizeof(ICMPHeader) == 8);
-__Check_Compile_Time(offsetof(ICMPHeader, type) == 0);
-__Check_Compile_Time(offsetof(ICMPHeader, code) == 1);
-__Check_Compile_Time(offsetof(ICMPHeader, checksum) == 2);
-__Check_Compile_Time(offsetof(ICMPHeader, identifier) == 4);
-__Check_Compile_Time(offsetof(ICMPHeader, sequenceNumber) == 6);
-
-enum {
-    ICMPv4TypeEchoRequest = 8,          ///< The ICMP `type` for a ping request; in this case `code` is always 0.
-    ICMPv4TypeEchoReply   = 0           ///< The ICMP `type` for a ping response; in this case `code` is always 0.
-};
-
-enum {
-    ICMPv6TypeEchoRequest = 128,        ///< The ICMP `type` for a ping request; in this case `code` is always 0.
-    ICMPv6TypeEchoReply   = 129         ///< The ICMP `type` for a ping response; in this case `code` is always 0.
-};
-
 NS_ASSUME_NONNULL_END
