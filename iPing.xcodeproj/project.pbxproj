@@ -375,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Zac.iPing.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "iPing/iPing-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "iPing/Sources/iPing-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +403,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Zac.iPing.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iPing/iPing-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "iPing/Sources/iPing-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

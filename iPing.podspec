@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.2'
 
   s.requires_arc = true
-  s.source_files = 'Sources/*'
+  s.source_files = 'iPing/Sources/*'
 
   # s.ios.frameworks = 'UIKit', 'Foundation'
   # s.osx.frameworks = 'Cocoa', 'Foundation'
