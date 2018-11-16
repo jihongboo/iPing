@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFCA1D932173548E00C90B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA1D922173548E00C90B9F /* AppDelegate.swift */; };
+		FFCA1D982173548E00C90B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCA1D962173548E00C90B9F /* Main.storyboard */; };
+		FFCA1D9D2173549000C90B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCA1D9B2173549000C90B9F /* LaunchScreen.storyboard */; };
+		FFDF02E12178845A00CF325F /* IPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02E02178845A00CF325F /* IPTool.m */; };
+		FFDF02E321788F2200CF325F /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02E221788F2200CF325F /* Ping.swift */; };
+		FFDF02E92178945700CF325F /* WHPingTester.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02E72178945600CF325F /* WHPingTester.m */; };
+		FFDF02EA2178945700CF325F /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02E82178945600CF325F /* SimplePing.m */; };
+		FFDF02F221789BBF00CF325F /* GBPing.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02ED21789BBF00CF325F /* GBPing.m */; };
+		FFDF02F321789BBF00CF325F /* GBPingSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02EF21789BBF00CF325F /* GBPingSummary.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFCA1D902173548E00C90B9F /* iPing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCA1D922173548E00C90B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFCA1D972173548E00C90B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFCA1D9C2173549000C90B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFCA1D9E2173549000C90B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFDF02D62178314400CF325F /* iPing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPing-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFDF02DE21787C0C00CF325F /* route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		FFDF02DF2178845A00CF325F /* IPTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPTool.h; sourceTree = "<group>"; };
+		FFDF02E02178845A00CF325F /* IPTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPTool.m; sourceTree = "<group>"; };
+		FFDF02E221788F2200CF325F /* Ping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
+		FFDF02E52178945600CF325F /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		FFDF02E62178945600CF325F /* WHPingTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHPingTester.h; sourceTree = "<group>"; };
+		FFDF02E72178945600CF325F /* WHPingTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHPingTester.m; sourceTree = "<group>"; };
+		FFDF02E82178945600CF325F /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		FFDF02EC21789BBF00CF325F /* GBPingSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBPingSummary.h; sourceTree = "<group>"; };
+		FFDF02ED21789BBF00CF325F /* GBPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBPing.m; sourceTree = "<group>"; };
+		FFDF02EE21789BBF00CF325F /* GBPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBPing.h; sourceTree = "<group>"; };
+		FFDF02EF21789BBF00CF325F /* GBPingSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBPingSummary.m; sourceTree = "<group>"; };
+		FFDF02F021789BBF00CF325F /* GBPing-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GBPing-Prefix.pch"; sourceTree = "<group>"; };
+		FFDF02F121789BBF00CF325F /* ICMPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICMPHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFCA1D8D2173548E00C90B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BB60F72998EE55086C57ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5B2E8951C3A780C00C0327D = {
+			isa = PBXGroup;
+			children = (
+				FFCA1D912173548E00C90B9F /* iPing */,
+				D5B2E8A01C3A780C00C0327D /* Products */,
+				1BB60F72998EE55086C57ED9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5B2E8A01C3A780C00C0327D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFCA1D902173548E00C90B9F /* iPing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFCA1D912173548E00C90B9F /* iPing */ = {
+			isa = PBXGroup;
+			children = (
+				FFDF02F7217988E800CF325F /* Sources */,
+				FFCA1D922173548E00C90B9F /* AppDelegate.swift */,
+				FFCA1D962173548E00C90B9F /* Main.storyboard */,
+				FFCA1D9E2173549000C90B9F /* Info.plist */,
+				FFCA1D9B2173549000C90B9F /* LaunchScreen.storyboard */,
+			);
+			path = iPing;
+			sourceTree = "<group>";
+		};
+		FFDF02DA21786E9900CF325F /* Geteway */ = {
+			isa = PBXGroup;
+			children = (
+				FFDF02DE21787C0C00CF325F /* route.h */,
+				FFDF02DF2178845A00CF325F /* IPTool.h */,
+				FFDF02E02178845A00CF325F /* IPTool.m */,
+			);
+			path = Geteway;
+			sourceTree = "<group>";
+		};
+		FFDF02E42178945600CF325F /* pingTool */ = {
+			isa = PBXGroup;
+			children = (
+				FFDF02E52178945600CF325F /* SimplePing.h */,
+				FFDF02E82178945600CF325F /* SimplePing.m */,
+				FFDF02E62178945600CF325F /* WHPingTester.h */,
+				FFDF02E72178945600CF325F /* WHPingTester.m */,
+			);
+			path = pingTool;
+			sourceTree = "<group>";
+		};
+		FFDF02EB21789BBF00CF325F /* GBPing */ = {
+			isa = PBXGroup;
+			children = (
+				FFDF02EC21789BBF00CF325F /* GBPingSummary.h */,
+				FFDF02EE21789BBF00CF325F /* GBPing.h */,
+				FFDF02ED21789BBF00CF325F /* GBPing.m */,
+				FFDF02EF21789BBF00CF325F /* GBPingSummary.m */,
+				FFDF02F021789BBF00CF325F /* GBPing-Prefix.pch */,
+				FFDF02F121789BBF00CF325F /* ICMPHeader.h */,
+			);
+			path = GBPing;
+			sourceTree = "<group>";
+		};
+		FFDF02F7217988E800CF325F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FFDF02DA21786E9900CF325F /* Geteway */,
+				FFDF02E42178945600CF325F /* pingTool */,
+				FFDF02EB21789BBF00CF325F /* GBPing */,
+				FFDF02E221788F2200CF325F /* Ping.swift */,
+				FFDF02D62178314400CF325F /* iPing-Bridging-Header.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFCA1D8F2173548E00C90B9F /* iPing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCA1D9F2173549000C90B9F /* Build configuration list for PBXNativeTarget "iPing" */;
+			buildPhases = (
+				FFCA1D8C2173548E00C90B9F /* Sources */,
+				FFCA1D8D2173548E00C90B9F /* Frameworks */,
+				FFCA1D8E2173548E00C90B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPing;
+			productName = demo;
+			productReference = FFCA1D902173548E00C90B9F /* iPing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5B2E8961C3A780C00C0327D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ankit Thakur";
+				TargetAttributes = {
+					FFCA1D8F2173548E00C90B9F = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = CR7BE3B56R;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "iPing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5B2E8951C3A780C00C0327D;
+			productRefGroup = D5B2E8A01C3A780C00C0327D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFCA1D8F2173548E00C90B9F /* iPing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFCA1D8E2173548E00C90B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCA1D9D2173549000C90B9F /* LaunchScreen.storyboard in Resources */,
+				FFCA1D982173548E00C90B9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFCA1D8C2173548E00C90B9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDF02F221789BBF00CF325F /* GBPing.m in Sources */,
+				FFDF02EA2178945700CF325F /* SimplePing.m in Sources */,
+				FFDF02E12178845A00CF325F /* IPTool.m in Sources */,
+				FFDF02F321789BBF00CF325F /* GBPingSummary.m in Sources */,
+				FFDF02E321788F2200CF325F /* Ping.swift in Sources */,
+				FFDF02E92178945700CF325F /* WHPingTester.m in Sources */,
+				FFCA1D932173548E00C90B9F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFCA1D962173548E00C90B9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCA1D972173548E00C90B9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFCA1D9B2173549000C90B9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCA1D9C2173549000C90B9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5B2E8B11C3A780C00C0327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5B2E8B21C3A780C00C0327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFCA1DA02173549000C90B9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR7BE3B56R;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = iPing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Zac.iPing.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "iPing/iPing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFCA1DA12173549000C90B9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR7BE3B56R;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = iPing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Zac.iPing.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iPing/iPing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "iPing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B2E8B11C3A780C00C0327D /* Debug */,
+				D5B2E8B21C3A780C00C0327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCA1D9F2173549000C90B9F /* Build configuration list for PBXNativeTarget "iPing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCA1DA02173549000C90B9F /* Debug */,
+				FFCA1DA12173549000C90B9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5B2E8961C3A780C00C0327D /* Project object */;
+}
