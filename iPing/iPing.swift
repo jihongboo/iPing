@@ -38,6 +38,10 @@ public class iPing: NSObject {
             }
         }
     }
+    
+    public func stop() {
+        _ping.stop()
+    }
 }
 
 extension iPing: GBPingDelegate {

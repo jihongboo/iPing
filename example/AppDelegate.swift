@@ -19,9 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let host1 = IPTool.getGatewayIPAddress()
 //        let host2 = IPTool.getDeviceIPAddress()
         let host3 = "www.baidu.com"
-        iPing(host: host3).ping(count: 5) {(delay, timeout) in
+        let ping = iPing(host: host3)
+        ping.ping(count: 5) {(delay, timeout) in
             print("delay: \(delay)ms, timeout: \(Int(timeout * 100))%")
         }
+        // you can stop id anytime
+        ping.stop()
         return true
     }
 }
