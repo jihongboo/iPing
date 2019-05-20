@@ -6,7 +6,7 @@
 //  Copyright © 2018 Ankit Thakur. All rights reserved.
 //
 
-public class Ping: NSObject {
+public class iPing: NSObject {
     private var _ping = GBPing()
     private var _totalCount = 0
     private var _currentCount = 0
@@ -40,7 +40,7 @@ public class Ping: NSObject {
     }
 }
 
-extension Ping: GBPingDelegate {
+extension iPing: GBPingDelegate {
     public func ping(_ pinger: GBPing, didReceiveReplyWith summary: GBPingSummary) {
         let delay = Int(summary.rtt * 1000)
         self._delay += delay

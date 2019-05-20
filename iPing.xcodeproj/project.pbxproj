@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FFBAB8642292536900883E99 /* iPing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBAB85D2292536900883E99 /* iPing.framework */; };
 		FFBAB8652292536900883E99 /* iPing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFBAB85D2292536900883E99 /* iPing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FFBAB86A2292537800883E99 /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02E221788F2200CF325F /* Ping.swift */; };
+		FFBAB86A2292537800883E99 /* iPing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02E221788F2200CF325F /* iPing.swift */; };
 		FFBAB86C2292539500883E99 /* iPing.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBAB86B2292539500883E99 /* iPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFBAB8702292546600883E99 /* IPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02E02178845A00CF325F /* IPTool.m */; };
 		FFBAB8712292546B00883E99 /* SimplePing.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDF02E52178945600CF325F /* SimplePing.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,7 +65,7 @@
 		FFDF02DE21787C0C00CF325F /* route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
 		FFDF02DF2178845A00CF325F /* IPTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPTool.h; sourceTree = "<group>"; };
 		FFDF02E02178845A00CF325F /* IPTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPTool.m; sourceTree = "<group>"; };
-		FFDF02E221788F2200CF325F /* Ping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
+		FFDF02E221788F2200CF325F /* iPing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPing.swift; sourceTree = "<group>"; };
 		FFDF02E52178945600CF325F /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
 		FFDF02E62178945600CF325F /* WHPingTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHPingTester.h; sourceTree = "<group>"; };
 		FFDF02E72178945600CF325F /* WHPingTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHPingTester.m; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				FFDF02DA21786E9900CF325F /* Geteway */,
 				FFDF02E42178945600CF325F /* pingTool */,
 				FFDF02EB21789BBF00CF325F /* GBPing */,
-				FFDF02E221788F2200CF325F /* Ping.swift */,
+				FFDF02E221788F2200CF325F /* iPing.swift */,
 				FFBAB86B2292539500883E99 /* iPing.h */,
 				FFBAB86D229253AA00883E99 /* Info.plist */,
 			);
@@ -319,7 +319,7 @@
 				FFBAB8742292547A00883E99 /* WHPingTester.m in Sources */,
 				FFBAB87A2292549300883E99 /* GBPingSummary.m in Sources */,
 				FFBAB8702292546600883E99 /* IPTool.m in Sources */,
-				FFBAB86A2292537800883E99 /* Ping.swift in Sources */,
+				FFBAB86A2292537800883E99 /* iPing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
