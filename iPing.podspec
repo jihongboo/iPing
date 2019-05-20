@@ -5,14 +5,12 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/jihongboo/iPing.git"
   s.license          = 'MIT'
   s.author           = { "Zac Ji" => "jihongboo@qq.com" }
+  s.platform         = :ios, '8.0'
+  s.swift_version    = "4.2"
   s.source           = {
     :git => "https://github.com/jihongboo/iPing.git",
     :tag => s.version.to_s
   }
-
-  s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.9'
-  s.tvos.deployment_target = '9.2'
 
   s.requires_arc = true
   s.source_files = 'iPing/Sources/**/*'

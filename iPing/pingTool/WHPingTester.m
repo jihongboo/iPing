@@ -33,12 +33,12 @@
     return self;
 }
 
-- (void) startPing
+- (void)startPing
 {
     [self.simplePing start];
 }
 
-- (void) stopPing
+- (void)stopPing
 {
     [_timer invalidate];
     _timer = nil;
@@ -46,16 +46,14 @@
 }
 
 
-- (void) actionTimer
+- (void)actionTimer
 {
     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(sendPingData) userInfo:nil repeats:YES];
 }
 
-- (void) sendPingData
+- (void)sendPingData
 {
-    
     [self.simplePing sendPingWithData:nil];
-    
 }
 
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iPing
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let host1 = IPTool.getGatewayIPAddress()
-        let host2 = IPTool.getDeviceIPAddress()
+//        let host1 = IPTool.getGatewayIPAddress()
+//        let host2 = IPTool.getDeviceIPAddress()
         let host3 = "www.baidu.com"
-        let _ = Ping(host: host3).ping(count: 5) {(delay, timeout) in
+        Ping(host: host3).ping(count: 5) {(delay, timeout) in
             print("delay: \(delay)ms, timeout: \(Int(timeout * 100))%")
         }
         return true

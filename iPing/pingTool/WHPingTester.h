@@ -16,24 +16,25 @@
 
 
 @interface WHPingTester : NSObject<SimplePingDelegate>
-@property (nonatomic, weak, readwrite) id<WHPingDelegate> delegate;
-- (instancetype) init NS_UNAVAILABLE;
-- (instancetype) initWithHostName:(NSString*)hostName NS_DESIGNATED_INITIALIZER;
-
-- (void) startPing;
-- (void) stopPing;
-@end
-
 typedef NS_ENUM(NSUInteger, WHPingStatus){
     WHPingStatusSending = 0 << 0,
     WHPingStatusTimeout = 1 << 1,
     WHPingStatusSended = 2 << 2,
 };
 
+@property (nonatomic, weak, readwrite) id<WHPingDelegate> _Nullable delegate;
+
+- (instancetype _Nonnull )init NS_UNAVAILABLE;
+- (instancetype _Nonnull )initWithHostName:(NSString * _Nonnull)hostName NS_DESIGNATED_INITIALIZER;
+
+- (void)startPing;
+- (void)stopPing;
+@end
+
+
 @interface WHPingItem : NSObject
 //@property(nonatomic, assign) WHPingStatus status;
 @property(nonatomic, assign) uint16_t sequence;
-
 @end
 
 
