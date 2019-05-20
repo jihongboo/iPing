@@ -24,7 +24,6 @@
 		FFBAB87A2292549300883E99 /* GBPingSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDF02EF21789BBF00CF325F /* GBPingSummary.m */; };
 		FFBAB87B2292549500883E99 /* GBPing-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = FFDF02F021789BBF00CF325F /* GBPing-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFBAB87C2292549800883E99 /* ICMPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDF02F121789BBF00CF325F /* ICMPHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFBAB87E2292579000883E99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBAB87D2292578F00883E99 /* Default-568h@2x.png */; };
 		FFCA1D932173548E00C90B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA1D922173548E00C90B9F /* AppDelegate.swift */; };
 		FFCA1D982173548E00C90B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCA1D962173548E00C90B9F /* Main.storyboard */; };
 		FFCA1D9D2173549000C90B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCA1D9B2173549000C90B9F /* LaunchScreen.storyboard */; };
@@ -58,7 +57,6 @@
 		FFBAB85D2292536900883E99 /* iPing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iPing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBAB86B2292539500883E99 /* iPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPing.h; sourceTree = "<group>"; };
 		FFBAB86D229253AA00883E99 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFBAB87D2292578F00883E99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FFCA1D902173548E00C90B9F /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCA1D922173548E00C90B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFCA1D972173548E00C90B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
-				FFBAB87D2292578F00883E99 /* Default-568h@2x.png */,
 				FFCA1D912173548E00C90B9F /* example */,
 				FFBAB85E2292536900883E99 /* iPing */,
 				D5B2E8A01C3A780C00C0327D /* Products */,
@@ -307,7 +304,6 @@
 			files = (
 				FFCA1D9D2173549000C90B9F /* LaunchScreen.storyboard in Resources */,
 				FFCA1D982173548E00C90B9F /* Main.storyboard in Resources */,
-				FFBAB87E2292579000883E99 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,7 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CR7BE3B56R;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = iPing/Info.plist;
+				INFOPLIST_FILE = example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -590,7 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CR7BE3B56R;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = iPing/Info.plist;
+				INFOPLIST_FILE = example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
