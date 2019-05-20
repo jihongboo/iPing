@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ankit Thakur. All rights reserved.
 //
 
-import UIKit
-
 public class Ping: NSObject {
     private var _ping = GBPing()
     private var _totalCount = 0
